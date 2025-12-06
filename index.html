@@ -3,25 +3,26 @@
 <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>Werkstatt Demo</title>
+    <meta name="description" content="Demoseite für eine KFZ-Werkstatt: Autoreparatur, Inspektion und Service." />
+    <title>KFZ-Werkstatt Demo</title>
 
-    <!-- Wichtig: relative Pfade, damit es auch in /werkstatt-demo/ auf GitHub Pages klappt -->
+    <!-- Relative Pfade: funktioniert in GitHub Pages / Root und in Unterordnern zuverlässig -->
     <link rel="stylesheet" href="./assets/styles.css" />
     <script defer src="./assets/script.js"></script>
 </head>
 
 <body>
 <header class="site-header">
-
     <div class="container header-inner">
         <div class="brand">KFZ-Werkstatt Demo</div>
-        <nav class="nav">
+        <nav class="nav" aria-label="Hauptnavigation">
             <a href="#leistungen">Leistungen</a>
             <a href="kontakt.html">Kontakt</a>
         </nav>
     </div>
 </header>
 
+<!-- KF16 Banner/Header -->
 <section class="masthead" aria-label="Werkstatt-Header">
     <div class="container">
         <picture>
@@ -36,25 +37,39 @@
 
 <main class="container">
     <section class="hero">
-        <h1>Autoreparatur & Inspektion</h1>
+        <h1>Autoreparatur &amp; Inspektion</h1>
         <p>Demoseite zur Vorführung – schnell, modern, ohne Baukasten.</p>
+
         <div class="actions">
             <a class="btn" href="tel:+4933708929634">Anrufen</a>
             <a class="btn secondary" href="kontakt.html">Kontakt</a>
-
         </div>
     </section>
 
     <section id="leistungen">
         <h2>Leistungen</h2>
+
         <div class="grid">
-            <div class="card">Autoreparatur</div>
-            <div class="card">Inspektion</div>
-            <div class="card">Schnellservice</div>
+            <div class="card">
+                <strong>Autoreparatur</strong><br>
+                <span class="muted">Bremsen, Fahrwerk, Motor &amp; Diagnose</span>
+            </div>
+
+            <div class="card">
+                <strong>Inspektion</strong><br>
+                <span class="muted">Wartung nach Herstellervorgaben</span>
+            </div>
+
+            <div class="card">
+                <strong>Schnellservice</strong><br>
+                <span class="muted">Checks &amp; typische Verschleißthemen</span>
+            </div>
+        </div>
+
+        <div style="margin-top:16px;">
+            <a class="btn secondary" href="kontakt.html">Termin/Anfrage →</a>
         </div>
     </section>
-
-
 </main>
 
 <footer class="footer">
